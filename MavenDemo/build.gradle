@@ -1,5 +1,24 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.jfrog.bintray'
+
+ext {
+    bintrayRepo = 'MavenDemo' // your repo name
+    bintrayName = 'MavenDemo' // has to be same as your library module name
+    publishedGroupId = 'com.module.mavendemo' // your module package name
+    libraryName = 'MavenDemo'
+    artifact = 'MavenDemo' // has to be same as your library module name
+    libraryDescription = 'A set of methods used to manipulate time object'
+    siteUrl = 'https://github.com/saindane99/Maven'
+    gitUrl = 'https://github.com/saindane99/Maven.git'
+    libraryVersion = '1.0'
+    developerId = 'saindane'
+    developerName = 'Shailesh Saindane'
+    developerEmail = 'shailesh.saindane@sanginfo.com'
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 26
 
@@ -21,29 +40,6 @@ android {
     }
 
 }
-/*bintray {
-    user = 'saindane'
-    key = '7060042def30cb25079b1290d543b1f7705acfc1'
-   // password = 'shailesh99'
-}*/
-
-ext {
-    bintrayRepo = 'MavenDemo' // your repo name
-    bintrayName = 'MavenDemo' // has to be same as your library module name
-    publishedGroupId = 'com.module.mavendemo' // your module package name
-    libraryName = 'MavenDemo'
-    artifact = 'MavenDemo' // has to be same as your library module name
-    libraryDescription = 'A set of methods used to manipulate time object'
-    siteUrl = 'https://github.com/saindane99/Maven'
-    gitUrl = 'https://github.com/saindane99/Maven.git'
-    libraryVersion = '1.0'
-    developerId = 'saindane'
-    developerName = 'Shailesh Saindane'
-    developerEmail = 'shailesh.saindane@sanginfo.com'
-    licenseName = 'The Apache Software License, Version 2.0'
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    allLicenses = ["Apache-2.0"]
-}
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
@@ -53,5 +49,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     //  implementation project(':app')
 }
-apply from: 'https://raw.githubusercontent.com/saindane99/Maven/master/MavenDemo/build.gradle'
+apply from: 'https://raw.githubusercontent.com/saindane99/Maven/master/MavenDemo/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/saindane99/Maven/master/MavenDemo/bintrayv1.gradle'
 
