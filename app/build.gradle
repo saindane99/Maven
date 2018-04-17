@@ -19,6 +19,7 @@ android {
 }
 repositories {
     maven { url 'https://maven.fabric.io/public' }
+    maven { url 'https://bintray.com/sanginfo/MavenDemo/mavendemo' }
 }
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
@@ -29,5 +30,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation project(':MavenDemo')
-  //  implementation 'com.module.mavendemo:MavenDemo:0.9.3'
+    //  implementation 'com.module.mavendemo:MavenDemo:0.9.3'
 }
