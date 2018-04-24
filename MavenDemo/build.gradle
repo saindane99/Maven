@@ -1,13 +1,15 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
 
-ext {
+/*ext {
     bintrayRepo = 'MavenDemo' // your repo name
     bintrayName = 'MavenDemo' // has to be same as your library module name
     publishedGroupId = 'com.module.mavendemo' // your module package name
     libraryName = 'MavenDemo'
     artifact = 'MavenDemo' // has to be same as your library module name
     libraryDescription = 'A set of methods used to manipulate time object'
+  //  userOrganization = 'Sanginfo'
     siteUrl = 'https://github.com/saindane99/Maven'
     gitUrl = 'https://github.com/saindane99/Maven.git'
     libraryVersion = '1.0'
@@ -17,6 +19,33 @@ ext {
     licenseName = 'The Apache Software License, Version 2.0'
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
     allLicenses = ["Apache-2.0"]
+}*/
+
+ext {
+
+    //For bintray and jcenter distribution
+    bintrayRepo = 'Ma'
+    bintrayName = 'MavenDemo'
+
+    publishedGroupId = 'com.module.mavendemo'
+    libraryName = 'MavenDemo'
+    artifact = 'MavenDemo' //This artifact name should be the same with library module name
+
+    libraryDescription = 'Simple, clean and short description'
+
+    siteUrl = 'https://github.com/saindane99/Maven'
+    gitUrl = 'https://github.com/saindane99/Maven.git'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'binsaindane'
+    developerName = 'Shailesh Saindane'
+    developerEmail = 'ssaindane77@gmail.com'
+    organization = 'Sanginfo' // if you push to organization's repository.
+    licenseName = 'The Apache Software License, Version 2.0'  //Example for license
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+
 }
 
 android {
@@ -49,6 +78,10 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     //  implementation project(':app')
 }
+/*apply from: 'https://raw.githubusercontent.com/saindane99/Maven/master/MavenDemo/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/saindane99/Maven/master/MavenDemo/bintrayv1.gradle'*/
+//These two remote files contain Bintray configuration as described above.
 apply from: 'https://raw.githubusercontent.com/saindane99/Maven/master/MavenDemo/installv1.gradle'
 apply from: 'https://raw.githubusercontent.com/saindane99/Maven/master/MavenDemo/bintrayv1.gradle'
+
 
