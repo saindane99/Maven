@@ -36,7 +36,7 @@ ext {
     siteUrl = 'https://github.com/saindane99/Maven'
     gitUrl = 'https://github.com/saindane99/Maven.git'
 
-    libraryVersion = '1.0.0'
+    libraryVersion = '2.0.0'
 
     developerId = 'binsaindane'
     developerName = 'Shailesh Saindane'
