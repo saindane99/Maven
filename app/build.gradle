@@ -19,7 +19,7 @@ android {
 }
 repositories {
     maven { url 'https://maven.fabric.io/public' }
-    maven { url 'https://bintray.com/sanginfo/MavenDemo/mavendemo' }
+    maven { url 'https://bintray.com/bintray9999/Ma/MavenDemo' }
 }
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
