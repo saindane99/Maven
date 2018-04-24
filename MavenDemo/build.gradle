@@ -41,7 +41,7 @@ ext {
     developerId = 'binsaindane'
     developerName = 'Shailesh Saindane'
     developerEmail = 'ssaindane77@gmail.com'
-    organization = 'Sanginfo' // if you push to organization's repository.
+    organization = 'bintray9999' // if you push to organization's repository.
     licenseName = 'The Apache Software License, Version 2.0'  //Example for license
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
     allLicenses = ["Apache-2.0"]
