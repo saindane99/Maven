@@ -24,7 +24,7 @@ apply plugin: 'com.github.dcendents.android-maven'
 ext {
 
     //For bintray and jcenter distribution
-    bintrayRepo = 'Ma'
+    bintrayRepo = 'MavenDemo'
     bintrayName = 'MavenDemo'
 
     publishedGroupId = 'com.module.mavendemo'
@@ -36,12 +36,12 @@ ext {
     siteUrl = 'https://github.com/saindane99/Maven'
     gitUrl = 'https://github.com/saindane99/Maven.git'
 
-    libraryVersion = '2.0.0'
+    libraryVersion = '1.0.0'
 
-    developerId = 'binsaindane'
+    developerId = 'gladiator'
     developerName = 'Shailesh Saindane'
-    developerEmail = 'ssaindane77@gmail.com'
-    organization = 'bintray9999' // if you push to organization's repository.
+    developerEmail = 'santosh.chaudhary@sanginfo.com'
+    organization = 'SangInfo' // if you push to organization's repository.
     licenseName = 'The Apache Software License, Version 2.0'  //Example for license
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
     allLicenses = ["Apache-2.0"]
